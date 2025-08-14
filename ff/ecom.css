@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/948/478/non_2x/green-and-black-wave-abstract-background-suitable-for-landing-page-and-computer-desktop-background-3d-vector.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-title {
+    color: chartreuse;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: aliceblue;
+    padding: 5px;
+    display: flex;
+}
+
+.navbar img {
+    width: 80px;
+    height: 60px;
+    border: 1px solid rgb(21, 20, 20);
+}
+
+.brand-title {
+    color: rgb(109, 157, 42);
+    display: inline-block;
+
+}
+.navbar h1{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 65%;
+    cursor: pointer;
+}
+
+
+.nav-link {
+    font-size: 20px;
+    color: rgb(109, 157, 42);
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: #111;
+}
+
+.intro-text {
+    color: beige;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.section-heading {
+    color: rgb(224, 224, 20);
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.section-text {
+    color: beige;
+    font-size: 20px;
+    margin: 10px 30px;
+}
+
+.featured-title {
+    color: blanchedalmond;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    
+    text-align: center;
+    background-color: rgba(128, 128, 128,0.3);
+    width: 350px;
+    height: 370px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product-card img {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    color: chocolate;
+}
+
+.product-card p {
+    margin-top: 5px;
+    color: cadetblue;
+}
+.container :hover{
+     transform: scale(1.2); 
+
+}
+.feature{
+     color: blanchedalmond;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container1 {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.container1 :hover{
+    transform: scale(1.2);
+}
+.About{  
+  color: blanchedalmond;
+    text-align: center;
+    margin: 30px 0;
+
+}
+.contact{
+    color: blanchedalmond;
+    text-align: center;
+    margin: 30px 0;
+}
+ul,.con h3{
+    display: inline;
+}
+.con ul{
+    margin-left: 41%;
+}
+.con{
+    color: aquamarine;
+    
+}
+.back{
+    background-color:rgba(11, 40, 11, 0.478);
+    justify-content: center;
+
+}
+.back h3{
+    color: aquamarine;
+    text-align: center;
+   
+}
+.d{
+    margin-left:72px;
+}
+.def{
+    color: violet;
+    font-size: 25px;
+    text-align: center;
+}
+.time{
+    color: rgb(35, 215, 215);
+    text-align: center;
+}
+.ab{
+    justify-content: center;
+    background-color:#111;
+}
+.e{
+    justify-content: center;
+    color: cadetblue;
+}
+.perfect,.perfect1,.perfect2{
+   font-size: 19px;
+   padding: 15px;
+   display: inline;
+}
+.perfect{
+    margin-top: 10px;
+    margin-left: 450px;
+}
+.perfect1{
+    margin-left: 20%;
+}
+.perfect2{
+    margin-left: 12.9%;
+}
+.perfect3{
+    font-size: 19px;
+    color: cadetblue;
+    margin-left: 50px;
+}
+.perfect4{
+    font-size: 19px;
+    color: cadetblue;
+    margin-left: 200px;
+}
+.perfect5{
+    font-size: 19px;
+    color: cadetblue;
+    margin-left: 260px;
+}
+.perfect6{
+    font-size: 25px;
+    color: cornflowerblue;
+    text-align: center;
+}
+.social{
+    display: flex;
+    gap: 20px;
+}
+.icon{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #111;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px 2px rgba(0,0,0,0);
+    transition: color 0.3 ease;
+}
+.icon::after{
+    content: attr(data-name);
+    position: absolute;
+    top: -45x;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    white-space: nowrap;
+}
+.icon::before{
+   content: "";
+   position: absolute;
+   top: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-width:5px ;
+   border-style: solid;
+   border-color: transparent transparent transparent transparent;
+   transition: all 0.3s ease;
+   opacity: 0;
+}
+.icon:hover{
+    color: white;
+    background-color: var(--bg-color);
+    opacity: 1;
+}
+.icon:hover{
+    background-color: var(--bg-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+.icon:hover::before{
+    border-color: var(--bg-color) transparent transparent transparent transparent;
+    opacity: 1;
+    top: -15px;
+
+}
+.social{
+    margin-left: 40%;
+}
